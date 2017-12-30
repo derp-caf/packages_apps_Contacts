@@ -280,4 +280,5 @@
     <!-- Popup select button background. -->
     <color name="select_popup_button_background">#FFFFFFFF</color>
 
+    <color name="ic_contacts_launcher_background">#2458CA</color>
 </resources>
