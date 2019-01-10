@@ -77,6 +77,7 @@ import com.android.contacts.util.ImplicitIntentsUtil;
 import com.android.contacts.util.SharedPreferenceUtil;
 import com.android.contacts.util.SyncUtil;
 import com.android.contacts.SimContactsConstants;
+import com.android.contacts.util.ViewUtil;
 import com.android.contactsbind.FeatureHighlightHelper;
 import com.android.contactsbind.experiments.Flags;
 import com.google.common.util.concurrent.Futures;
@@ -498,6 +499,7 @@ public class DefaultContactBrowseListFragment extends ContactBrowseListFragment
         mSearchHeaderView = inflater.inflate(R.layout.search_header, null, false);
         headerContainer.addView(mSearchHeaderView);
         getListView().addHeaderView(headerContainer, null, false);
+        ViewUtil.addBottomPaddingToListViewForFab(getListView(), getResources());
         checkHeaderViewVisibility();
 
         mSearchProgress = getView().findViewById(R.id.search_progress);
